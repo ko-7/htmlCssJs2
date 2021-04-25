@@ -1,0 +1,11 @@
+html,SCSS,bootstrapを使って下リンク先ページの模写をする。
+https://www.airbnb.jp/work?_set_bev_on_new_domain=1616251909_MDY1ODVmNjJmOWVh
+
+
+【参考リンク】
+SCSSの導入
+SCSS導入：https://qiita.com/Y_ASAMOTO/items/d5f33ecf5bfbb7f028a5
+resetCSS：http://html5doctor.com/html-5-reset-stylesheet/
+
+SCSSのブレークポイント：https://macoblog.com/sass_media_query/
+SCSSの基本的な使い方：https://www.webdesignleaves.com/pr/css/css_basic_08.html

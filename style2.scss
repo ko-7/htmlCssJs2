@@ -1,0 +1,179 @@
+// レスポンシブのブレークポイント設定　参考：https://macoblog.com/sass_media_query/
+$pc: 992px; //Laptop ※デスクトップはデフォルトのためラップトップのみ定義
+$sp: 576px;  //smartphone
+@mixin pc{
+  @media (max-width: ($pc)){
+    @content;
+  }
+}
+@mixin sp{
+  @media (max-width: ($sp)){
+    @content;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+img{
+  object-fit: cover;
+}
+
+.bg-gray{
+  background-color: #eee
+}
+.bg-green{
+  background-color: #007377;
+}
+
+//header
+header{
+  position: relative;
+}
+.header-video{
+  width: 100%;
+}
+.header-logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+// youtube動画　背景埋め込み
+  // #yt_player,
+  // .overlay{
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   // width: auto;
+  //   // height: auto;
+  // }
+  // .overlay{
+  //   z-index: 1;
+  // }
+  // #yt_player{
+  //   z-index: -2;
+  // }
+
+// introduction
+.introduction-img{
+  height: 416px;
+  @include pc{
+    height: 333px;
+  }
+  @include sp{
+    height: 380px;
+  }
+}
+
+// charm
+.charm-col{
+  height: 500px;
+}
+.charm-card{
+  height: 100%;
+}
+.charm-text{
+  h5{
+    margin: 0;
+    padding: 6px 0;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  p{
+    margin: 15px 0;
+    font-size: 18px;
+  }
+}
+.charm-img{
+  height: 100%;
+}
+
+//safety
+.safety-row{
+  // width: 664px;
+  h3{
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+
+//impression(感想)
+.impression-col{
+  height: 500px;
+}
+.impression-img{
+  height: 100%;
+  width: 100%;
+}
+.impression-card{
+  height: 100%;
+}
+.impression-text{
+  h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
+
+// forcompany
+.forcompany{
+  h1{
+    font-weight: normal;
+  }
+  p{
+    font-weight: bold;
+  }
+  .forcompany-input{
+    height: 57px;
+    padding: 15px;
+  }
+  .forcompany-submit-button{
+    width: 240px;
+    background-color: rgba(0, 132, 137, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+  }
+}
+
+// footer
+.footer{
+  p{
+    margin-bottom: 8px;
+  }
+  a{
+    color: black;
+  }
+  .footer-bottom-icon{
+    a{
+      text-decoration: none;
+      display: flex;
+      font-weight: bold;
+      font-size: 14px;
+      &:hover{
+        color: #888;
+        border-color:#888;
+      }
+    }
+    .footer-span-underline{
+      text-decoration: underline;
+    }
+  }
+}
